@@ -1,0 +1,51 @@
+<?php
+require_once '../../model/Adm.php';
+require_once '../../dao/AdmDao.php';
+require_once '../../model/Mensagem.php';
+
+$adm = new Adm();
+$msg = new Mensagem();
+
+
+
+try {
+    $admDao = new AdmDao();
+
+    switch ($_POST["acao"]) {
+        case 'DELETE':
+            $admDao->delete($_POST['codAdm']);
+            header("Location: index.php");
+            exit;
+        case 'SALVAR':
+        case 'ATUALIZAR':
+            $adm->setCodAdm($_POST['codAdm']);
+            $adm->setNomeAdm($_POST['nomeAdm']);
+            $adm->setCpfAdm($_POST['cpfAdm']);
+            $adm->setDataNascAdm($_POST['dataNascAdm']);
+            $adm->setEmailAdm($_POST['emailAdm']);
+            $adm->setPasswordAdm($_POST['passwordAdm']);
+            $adm->setImgAdm($adm->salvarImagem($_POST['imgAdm']));
+            $adm->setTokenAdm($adm->generateToken());
+
+            if ($_POST["acao"] == 'SALVAR') {
+                $admDao->insert($adm);
+                $msg->setMensagem("Usuário salvo com sucesso.", "bg-success");
+            } elseif ($_POST["acao"] == 'ATUALIZAR') {
+                $admDao->update($_POST["codAdm"], $adm);
+                $msg->setMensagem("Usuário atualizado com sucesso.", "bg-success");
+            }
+
+            header("Location: index.php");
+            exit;
+            case 'SELECTID':
+              $admDao->selectId($_POST['id']); // Corrigido para $_POST['id']
+              include('register.php');
+              exit;
+          // ...
+      }
+  } catch (Exception $e) {
+      // Trate exceções de maneira segura
+      echo 'Exceção capturada: ', $e->getMessage(), "\n";
+      // Redirecione ou faça algo adequado em caso de erro
+  }
+?>

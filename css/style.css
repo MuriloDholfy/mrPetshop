@@ -1,0 +1,560 @@
+.colorFundo{
+  background-color: black;
+
+}
+
+.header{
+  font-size: 12px;
+  font-weight: bold;
+ }
+
+a {
+  position: relative;
+  text-decoration: none;  
+  
+}
+
+li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom:0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+align-items: center;
+
+
+ 
+}
+
+li a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  color: red;
+}
+
+.container00 {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.arrowDown {
+  display: inline-block;
+  width: 90px;
+  margin-top: 5px;
+  
+}
+
+.logo {
+  width: 50px;
+  margin-left: -10px;
+  margin-right: 20px;
+}
+
+.container01 {  background-image: url(../img/site/cachorrinho-fofo-sentado-olhando-para-a-camera-fofinho-e-brincalhao-gerado-pela-inteligencia-artificial.jpg);
+
+}
+.container02 {  background-image: url(../img/site/filhote-de-cachorro-bonito-sentado-no-chao-de-madeira-dentro-de-casa-ia-generativa\ 1.png)
+}
+.container03 {  background-image: url(../img/site/filhote-de-cachorro-fofo-sentado-olhando-para-a-camera-com-a-lingua-para-fora-brincalhao-gerado-pela-inteligencia-artificial\ 1.jpg);
+
+}
+.container04 {  background-color: #202020;
+}
+.container05 {  background-image: url(../img/site/vista-de-um-gatinho-adoravel.jpg);
+opacity: 90%;
+}
+.sobre{
+  color: #FF6110;
+}
+.sobre-desc{
+  color: white;
+}
+
+.titlePadding{
+  padding-top: 200px;
+  color: white;
+}
+
+.shortTitle {
+  width: 550px;
+  margin-bottom: -25px;
+}
+.mediumTitle {
+  width: 650px;
+  margin-bottom: -25px;
+  
+}
+.lead{
+  width:auto;
+  margin-bottom: -25px;
+  text-size-adjust: -25px;
+} 
+.card-body{
+    width: auto;
+    font-size: 50px;
+    margin-bottom: auto;
+  
+  }
+
+@media (max-width: 405px) {
+  .logoPc {
+    width: 180px;
+    margin-top: 15px;
+  }
+  .footer,.card-body {
+    font-size: 10px;
+  }
+}
+  @media (max-width: 350px) {
+ 
+}
+@media (max-width: 350px) {
+  .logoP {
+    width: 150px;
+    margin-top: 15px;
+ }
+} ;
+
+@media (max-width: 750px) {
+  .titlePadding {
+    padding-top: 120px;
+  }
+
+
+  .shortTitle {
+    width: auto;
+    font-size: 50px;
+  }
+
+
+  .mediumTitle {
+    width: auto;
+    font-size: 50px;
+  }
+} ;
+
+p{
+  text-align: justify;
+}
+
+.footer-section {
+  
+  background: #262626;
+  position: relative;
+  z-index: 5;
+  }
+  .footer-cta {
+  border-bottom: 1px solid #25222bcc;
+  }
+  .single-cta i {
+  color: #A8EFFF;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+  }
+  .cta-text {
+  padding-left: 15px;
+  display: inline-block;
+  }
+  .cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+  }
+  .cta-text span {
+  color: #757575;
+  font-size: 15px;
+  }
+  .footer-content {
+  position: relative;
+  z-index: 2;
+  }
+  .footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+  }
+  .footer-logo {
+  margin-bottom: 30px;
+  }
+  .footer-logo img {
+    max-width: 200px;
+  }
+  .footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+  }
+  .footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+  }
+  .footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+  }
+  .footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  size: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+  }
+  .facebook-bg{
+  background: #3B5998;
+  }
+  .twitter-bg{
+  background: #55ACEE;
+  }
+  .google-bg{
+  background: #A8EFFF;
+  }
+  .footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+  }
+  .footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #ff7b00;
+  }
+  .footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+  }
+  .footer-widget ul li a:hover{
+  color: #ffa600;
+  }
+  .footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+  }
+  .subscribe-form {
+  position: relative;
+  overflow: hidden;
+  }
+  .subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #5f5c5c;
+  border: 1px solid #353535;
+  color: #fff;
+  }
+  .subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #ff7b00;
+    padding: 13px 20px;
+    border: 1px solid #000000;
+    top: 0;
+  }
+  .subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+  }
+  .copyright-area{
+  background: #202020;
+  padding: 25px 0;
+  }
+  .copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+  }
+  .copyright-text p a{
+  color: #ff8800;
+  }
+  .footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+  }
+  .footer-menu li:hover a{
+  color: #A8EFFF;
+  }
+  .footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+  }
+  .form-label{
+    color: #e7e1df;
+  }
+ 
+  .card {
+    border-radius: 0; /* Deixa as bordas quadradas */
+    margin: 20px; 
+    height: 400px;
+    border-color: transparent;
+    background-color: transparent;
+  
+  }
+
+  .card-body {  
+    background-color:transparent;
+    color: white;
+    font-size: 14px; /* Define o tamanho da fonte da descrição */
+  }
+  .carousel {
+    background-color: #212529;
+    margin: 20px; 
+  }
+
+  .card-img-top {
+    background-color: white;
+    border-radius: 0; /* Deixa as bordas quadradas */
+
+}
+.botao{
+  
+  padding: 5px;
+  height: 3%;
+  width: 8%;
+  font-size: small;
+  border-radius: 100px;
+  color: white;
+  background-color: #F19102;
+}
+.card {
+  border-radius: 0; /* Deixa as bordas quadradas */
+  margin-top: 20px; /* Adiciona uma margem no topo do card */
+}
+
+.card-body {
+  font-size: 16px; /* Define o tamanho da fonte da descrição */
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  color: #FFD700;
+  margin-right: 5px;
+}
+.caixa {
+  display: none;
+  text-align: center; /* Centraliza horizontalmente */
+}
+
+.caixa .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Adicione esta regra para centralizar verticalmente */
+.caixa p {
+  margin-bottom: 10px;}
+.caixa{
+  background-color: rgb(20, 19, 19);
+  height: 80%;
+  width: 70%;
+  padding: 5px;
+}
+/* Adicione essa classe de animação ao seu CSS */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Aplique a classe de animação à caixa */
+.caixa {
+  animation: fadeIn 1.5s ease-in-out;
+}
+       
+.caixa2{
+  display: none;
+  text-align: center; /* Centraliza horizontalmente */
+  position: absolute;
+  z-index: 1000;
+}
+
+.caixa2 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Adicione esta regra para centralizar verticalmente */
+.caixa2 p {
+  margin-bottom: 10px;}
+.caixa2{
+  background-color: rgb(20, 19, 19);
+  height: 80%;
+  width: 70%;
+  padding: 5px;
+}
+/* Adicione essa classe de animação ao seu CSS */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Aplique a classe de animação à caixa */
+.caixa2 {
+  animation: fadeIn 1.5s ease-in-out;
+}
+p {
+  font-size: 25px; /* Tamanho de fonte padrão */
+}
+
+/* Adapte o tamanho da fonte para telas menores usando media queries */
+@media (max-width: 1595px) {
+  p {
+    font-size: 20px; /* Ajuste o tamanho da fonte para telas menores */
+  }
+}
+@media (max-width: 965px) {
+  p {
+    font-size: 15px; /* Ajuste o tamanho da fonte para telas menores */
+  }
+}
+@media (max-width: 543px) {
+  p {
+    font-size: 13px; /* Ajuste o tamanho da fonte para telas menores */
+  }
+}
+@media (max-width: 439px) {
+  p {
+    font-size: 10px; /* Ajuste o tamanho da fonte para telas menores */
+  }
+}
+@media (max-width: 339px) {
+  p {
+    font-size: 8px; /* Ajuste o tamanho da fonte para telas menores */
+  }
+}
+
+.container.responsive .toggle {
+  transform: translateY(-50%);
+}
+.toggle-btn-register {
+  display: register2; /* Inicialmente oculto */
+}
+       @media (max-width: 840px) {
+  .toggle-btn-register {
+    display: block; /* Torna o botão visível quando a largura máxima for 840px */
+  }
+}
+
+@media (min-width: 841px) {
+  .toggle-btn-register {
+    display: none; /* Oculta o botão quando a largura for maior que 840px */
+  }
+}
+@media (max-width: 840px) {
+
+
+  .header a {
+    size: 2px; /* Ajuste o tamanho do texto do header para telas menores */
+  }
+}
+/* Adicione este estilo para ocultar a lista de navegação em telas pequenas */
+@media (max-width: 990px) {
+  .nav {
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 100%;
+  height: 100%;
+    background-color: #202020;
+    padding: 10px;
+    width: 200px;
+    text-align: start;
+  }
+
+  .hamburger-icon {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+  }
+}
+
+/* Adicione este estilo para ocultar o ícone do hambúrguer em telas maiores */
+@media (min-width: 991px) {
+  .hamburger-icon {
+    display: none;
+  }
+}
+
+/* Adicione este estilo para o off-canvas menu */
+.off-canvas {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  overflow-y: auto;
+}
+
+/* Adicione estilo para a lista de navegação no off-canvas menu */
+.off-canvas .nav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+}
+
+/* Adicione estilo para o botão de fechar no off-canvas */
+.close-button {
+  top: 10px;
+  position: absolute;
+  right: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+hr{
+  color: white;
+  margin-top: 30px;
+}
+

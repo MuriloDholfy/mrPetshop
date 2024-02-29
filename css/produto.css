@@ -1,0 +1,312 @@
+
+  
+  
+
+
+/* Adicione essa classe de animação ao seu CSS */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Aplique a classe de animação à caixa */
+.caixa {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.caixa2 {
+  display: none;
+  text-align: center; /* Centraliza horizontalmente */
+  position: absolute;
+  z-index: 1000;
+}
+
+.caixa2 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Adicione esta regra para centralizar verticalmente */
+.caixa2 p {
+  margin-bottom: 10px;
+}
+.caixa2 {
+  background-color: rgb(20, 19, 19);
+  height: 80%;
+  width: 70%;
+  padding: 5px;
+}
+
+/* Adicione essa classe de animação ao seu CSS */
+@keyframes fadeIn2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Aplique a classe de animação à caixa */
+.caixa2 {
+  animation: fadeIn2 1.5s ease-in-out;
+}
+
+p {
+  font-size: 25px; /* Tamanho de fonte padrão */
+}
+
+/* Adapte o tamanho da fonte para telas menores usando media queries */
+@media (max-width: 1595px) {
+  p {
+    font-size: 20px; /* Ajuste o tamanho da fonte para telas menores */
+  }
+}
+
+@media (max-width: 965px) {
+  p {
+    font-size: 15px; /* Ajuste o tamanho da fonte para telas menores */
+  }
+}
+
+.wrapper{
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+
+.product-card{
+  position: relative;
+  background: #ffffff;
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 7px 25px -10px rgba(0,0,0,0.33);
+  transition: all 0.5s ease;
+}
+
+
+.product-card *{
+  transition: all 0.5s ease;
+}
+
+.product-card .product-link{
+  display: block;
+}
+
+.product-card:hover{
+  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.25);  
+  transform: translateY(-3px);
+}
+
+.product-card:hover .product-link,
+.product-card .product-link:focus{
+    text-decoration: none;
+}
+
+.product-card .product-link img{
+  background: #eee;
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.product-card:hover .product-link img{
+  height: 240px;
+
+}
+  
+.product-card .overlay{
+  display: block;
+  width: 100%;
+  height: 300px;
+  background: rgba(0,0,0,.25);
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+.product-card:hover .overlay{
+  height: 240px;
+  opacity: 1;
+}
+
+.product-card .info{
+  padding: 2.5rem;
+  display: flex;
+  background: linear-gradient(rgba(0,0,0,0.025),transparent );
+}
+
+.product-card:hover .info{
+  padding-bottom: 80px;
+}
+
+
+.product-card .info .title{
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  color: #555555;
+}
+
+.product-card .info .price{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  float: right;
+  color: #F19102;
+}
+
+
+.product-card .info .price .woocommerce-Price-currencySymbol{
+  font-size: 16px;
+  vertical-align: top;
+}
+.product-card .button-wrap{
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+  left: 0;
+  width: 100;
+  
+}
+
+.product-card:hover .button-wrap{
+  bottom: 2rem;
+  
+}
+.product-card .button-wrap .button:hover{
+  transform: none;
+}
+
+.product-card .button-wrap .button.cart{
+  float: right;
+  border-radius: 30px 0 0 30px!important;
+}
+
+.product-card .button-wrap .button.wish{
+  float: left;
+  margin-left: 2rem;
+  width: 4.2rem;
+  height: 4.2rem;
+  padding: 1rem 1.33rem;
+  background-color: #eee;
+  color: #bbbbbb;
+  box-shadow: none;
+}
+
+
+.product-card .button-wrap .button.wish:hover{
+  float: left;
+  margin-left: 2rem;
+  width: 4.2rem;
+  height: 4.2rem;
+  padding: 1rem 1.33rem;
+  background-color: #ffcdd2;
+  box-shadow: none;
+}
+.product-card .button-wrap .button.wish:hover i{
+  color: #f44336;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a.button{
+    background: #2ecc71;
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 800!important;
+    font-size: 16px;
+    -webkit-border-radius: 100px!important;
+       -moz-border-radius: 100px!important;
+            border-radius: 100px!important;
+  transition: all 0.3s ease;
+    color: #ffffff;
+    margin-top: 0.5rem;
+    -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.133);
+       -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.133);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.133);
+}
+a.button:hover{
+  text-decoration: none;
+    -webkit-transform: translateY(-3px);
+       -moz-transform: translateY(-3px);
+        -ms-transform: translateY(-3px);
+         -o-transform: translateY(-3px);
+            transform: translateY(-3px);
+    -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+       -moz-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+}
+
+ a.button:active{
+    background: #e47f45;
+    border-color: #e47f45;
+}
+
+a.button.more {
+    margin-top: 2rem;
+}
+/* Adapte o tamanho da fonte para telas menores usando media queries */
+@media (max-width: 1595px) {
+  p {
+    font-size: 20px; /* Ajuste o tamanho da fonte para telas menores */
+  }
+}
+
+@media (max-width: 965px) {
+  p {
+    font-size: 15px; /* Ajuste o tamanho da fonte para telas menores */
+  }
+
+  /* Diminua o tamanho dos cards quando a largura for menor que 800px */
+  .wrapper {
+    padding-top: 3rem; /* Reduza o espaçamento superior */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product-card {
+    
+    width: 100%; /* Ocupa toda a largura disponível */
+    margin-bottom: 1.5rem; /* Adicione um espaçamento inferior entre os cards */
+  }
+
+  .product-card .product-link img {
+    height: 180px; /* Reduza a altura da imagem */
+  }
+
+  .product-card .info {
+    padding: 1.5rem; /* Reduza o preenchimento da informação do card */
+  }
+
+  .product-card .info .title {
+    font-size: 16px; /* Reduza o tamanho da fonte do título */
+  }
+
+  .product-card .info .price {
+    font-size: 16px; /* Reduza o tamanho da fonte do preço */
+  }
+}

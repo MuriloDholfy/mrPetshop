@@ -1,0 +1,73 @@
+/* Adicione estas regras de estilo ao seu arquivo CSS existente */
+
+    /* Estilo padrão para telas com largura maior que 800 pixels */
+    @media (min-width: 800px) {
+        .col-4 {
+          max-width: 33.3333%;
+        }
+  
+        .col-4 img {
+          width: 100%;
+        }
+  
+        .col-4,
+        .col-4.text-white {
+          flex: 0 0 33.3333%;
+        }
+      }
+  
+      /* Estilo para telas com largura menor que 800 pixels */
+      @media (max-width: 799px) {
+        .col-1 {
+          display: none; /* Oculta a coluna com as miniaturas */
+        }
+  
+        .col-4 {
+          max-width: 100%; /* Ajusta a largura máxima para ocupar 100% da largura da tela */
+        }
+  
+        .col-4 img {
+          width: 100%; /* Ajusta a largura da imagem para ocupar 100% da largura da coluna */
+        }
+  
+        .col-4,
+        .col-4.text-white {
+          flex: 0 0 100%;
+        }
+      }
+  
+      /* Adicione essas regras ao seu arquivo CSS existente */
+  
+      /* Telas maiores */
+      @media (min-width: 800px) {
+        .row {
+          display: flex;
+        }
+  
+        .col-1 {
+          order: -1;
+        }
+  
+        .col-4 {
+          flex-grow: 1;
+        }
+      }
+  
+      /* Telas menores */
+      @media (max-width: 800px) {
+        .row {
+          flex-direction: column;
+        }
+  
+        .col-1 {
+          width: 100%;
+          margin: 3px;
+        }
+  
+        .col-4 {
+          width: 100%;
+          margin: 3px;
+  
+        }
+      }
+   
